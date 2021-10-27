@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Urbanist', sans-serif;
+}
+
+.hero{
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    color: #fff;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas: 
+    "nav"
+    "content";
+
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* Menu */
+
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-logo{
+    font-weight: 300;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px;
+}
+
+.hero-wave{
+    position: absolute;
+    width: 100%;
+    align-self: end;
+}
+
+.hero-picture{
+    width: 60%;
+}
+.hero-picture img{
+    width: 95%;
+}
+
+.hero-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cta{
+    border: none;
+    background: #2980b9;
+    border-radius: 7%;
+    padding:10px;
+    margin: 15px;
+    color: #fff;
+}
+
+
+.hero-text > .texts{
+    flex-direction: row;
+    margin: 30px;
+    width: 40%;
+}
+
+
+.hero-titulo{
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.hero-subtitle{
+    width: 20%;
+    margin: 15px;
+}
+
+
+
+.cta:hover{
+   cursor: pointer;
+   transform: scale(1.5);
+}
